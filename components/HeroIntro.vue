@@ -1,70 +1,113 @@
 <template>
     <div ref="scrollDist"></div>
-        <div ref="main">
-        <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <div ref="main">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <mask id="m">
-            <g class="cloud1">
-                <rect fill="#fff" width="100%" height="801" y="799" />
-                <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+            <g ref="cloud1Group">
+                <rect fill="#fff" width="100%" height="100%" y="850" />
+                <image href="../assets/img/big-cloud.svg" width="100%" height="100%" y="0"/>
             </g>
             </mask>
+
+            <image ref="sky" href="../assets/img/sky.jpg" width="100%" height="100%"/>
+            <image ref="piccoli" href="../assets/img/piccoli.svg" width="100%" />
             
-            <image class="sky" xlink:href="https://assets.codepen.io/721952/sky.jpg"  width="1200" height="590" />
-            <image class="mountBg" xlink:href="https://assets.codepen.io/721952/mountBg.png" width="1200" height="800"/>    
-            <image class="mountMg" xlink:href="https://assets.codepen.io/721952/mountMg.png" width="1200" height="800"/>    
-            <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
-            <image class="mountFg" xlink:href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"/>
-            <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
-            <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
-            <text fill="#fff" x="350" y="200">EXPLORE</text>
-            <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
+            <image ref="cloud2" href="../assets/img/small-cloud.svg" x="1%" y="17%" width="20%" />
+            <image ref="background" href="../assets/img/background.png" width="100%" />
+            <image ref="medi" href="../assets/img/medi.svg" width="900" />
+            <image ref="grandi" href="../assets/img/grandi.svg" width="100%" />
+            
+            <text x="30%" y="20%" fill="#fff" class="titolo-hero">STANCO DEI PICCIONI?</text>
+            <image ref="arrow" href="../assets/img/arrow-down.svg" width="30" />
             
             <g mask="url(#m)">
             <rect fill="#fff" width="100%" height="100%" />      
-            <text x="350" y="200" fill="#162a43">FURTHER</text>
+            <text x="30%" y="50%" fill="#162a43" class="titolo-hero">Servizio di allontanamento volatili</text>
             </g>
             
-            <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
+            <rect ref="arrowBtn" width="30" height="100" opacity="0" style="cursor:pointer"/>
         </svg>
     </div>
 </template>
 
 <script setup>
+
 import { gsap } from "gsap";
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const scrollDist = ref()
 const main = ref()
+const cloud1Group = ref()
+const grandi = ref()
+const medi = ref()
+const sky = ref()
+const piccoli = ref()
+const cloud2 = ref()
+const background = ref()
+const arrow = ref()
+const arrowBtn = ref()
 
 onMounted(() => {
 
     gsap.set(scrollDist.value, {
-        width:'100%',
-        height:'200%'
+        width: '100%',
+        height: '200%'
     })
 
     gsap.set(main.value, {
-        position:'fixed',
-        background:'#fff',
-        width:'100%',
-        maxWidth:'1200px',
-        height:'100%',
-        top:0,
-        left:'50%',
-        x:'-50%'
+        position: 'fixed',
+        background: '#fff',
+        width: '100%',
+        height: '100vh',
+        top: 0,
+        left: '50%',
+        x: '-50%'
     })
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: scrollDist.value,
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: 1
+        }
+    })
+    .fromTo(sky.value, {y: 0}, {y: -200}, 0)
+    .fromTo(cloud1Group.value, {yPercent: 10}, {yPercent: -100})
+    .fromTo(medi.value, {yPercent: 50}, {yPercent: -50}, 0)
+    .fromTo(cloud2.value, {yPercent: -100}, {yPercent: 0}, 0)
+    .fromTo(grandi.value, {yPercent: 50, xPercent: 50}, {yPercent: -50}, 0)
+    .fromTo(piccoli.value, {yPercent: 50, xPercent: 50}, {yPercent:-100}, 0)
+    .fromTo(background.value, {yPercent: 0}, {yPercent: -100}, 0)
+
+    arrowBtn.value.addEventListener('mouseenter', (e) => {
+        gsap.to(arrow.value, {
+            y: 10,
+            duration: 0.8,
+            ease: 'back.inOut(3)',
+            overwrite: 'auto'
+        });
+    });
+
+    arrowBtn.value.addEventListener('mouseleave', (e) => {
+        gsap.to(arrow.value, {
+            y: 0,
+            duration: 0.5,
+            ease: 'power3.out',
+            overwrite: 'auto'
+        });
+    });
+
+    arrowBtn.value.addEventListener('click', (e) => {
+        gsap.to(window, {
+            scrollTo: { y: window.innerHeight },
+            duration: 1.5,
+            ease: 'power1.inOut'
+        });
+    });
 })
-
-gsap.timeline({scrollTrigger:{trigger: scrollDist.value, start:'top top', end:'bottom bottom', scrub:1}})
-    .fromTo('.sky', {y:0},{y:-200}, 0)
-    .fromTo('.cloud1', {y:100},{y:-800}, 0)
-    .fromTo('.cloud2', {y:-150},{y:-500}, 0)
-    .fromTo('.cloud3', {y:-50},{y:-650}, 0)
-    .fromTo('.mountBg', {y:-10},{y:-100}, 0)
-    .fromTo('.mountMg', {y:-30},{y:-250}, 0)
-    .fromTo('.mountFg', {y:-50},{y:-600}, 0)
-
-$('#arrowBtn').on('mouseenter', (e)=>{ gsap.to('.arrow', {y:10, duration:0.8, ease:'back.inOut(3)', overwrite:'auto'}); })
-$('#arrowBtn').on('mouseleave', (e)=>{ gsap.to('.arrow', {y:0, duration:0.5, ease:'power3.out', overwrite:'auto'}); })
-$('#arrowBtn').on('click', (e)=>{ gsap.to(window, {scrollTo:innerHeight, duration:1.5, ease:'power1.inOut'}); }) // scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
 </script>
