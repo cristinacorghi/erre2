@@ -51,9 +51,6 @@ module.exports = {
     boxShadow: {
       'button': '0px 3px 6px 0px rgba(0, 0, 0, 0.16)'
     },
-    backgroundImage: {
-      'hero': "url('./assets/img/sky.jpg')"
-    }
   },
   plugins: [],
 }
