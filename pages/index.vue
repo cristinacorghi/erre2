@@ -9,5 +9,9 @@
 
     <HomeServizi />
     <HomeTuttiServizi />
-    <HomeDati />
+    <div class="mb-[160px]">
+        <HomeDati />
+    </div>
+    <HomePreventivo />
+    <HomeAboutUs />
 </template>

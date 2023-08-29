@@ -19,5 +19,5 @@
         </div>
     </div>
 
-    <HomeCarousel />
+    <!-- <HomeCarousel /> -->
 </template>
