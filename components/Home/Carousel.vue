@@ -1,504 +1,497 @@
 <template>
-    <div class="gallery">
-      <ul class="cards">
-        <!-- Raccolta autorizzata -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/servizio1.jpg"
-            alt="Servizio 1"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Raccolta autorizzata
+  <div class="gallery absolute w-full h-screen overflow-hidden">
+    <ul class="cards absolute w-[400px] h-[555px] top-[40%] left-[50%]">
+
+      <!-- Raccolta autorizzata -->
+      <li class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white">
+        <img class="w-full" src="../../assets/img/servizio1.jpg" alt="Servizio 1" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Raccolta autorizzata
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/chart-bar.svg" alt="chart bar" />
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/chart-bar.svg" alt="chart bar" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Il più efficace</p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/awards.svg" alt="Awards" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Da anni top leader</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Il più efficace</p>
             </div>
           </div>
-        </li>
-  
-        <!-- Bonifica ambienti -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/bonifica-ambienti.jpg"
-            alt="Bonifica ambienti"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Bonifica ambienti
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/awards.svg" alt="Awards" />
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/sparkles.svg" alt="Sparkles" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Pulizia a fondo</p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/soap.svg" alt="Soap" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Massima igiene</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Da anni top leader</p>
             </div>
           </div>
-        </li>
-  
-        <!-- Linea meccanica ad aghi -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/linea-meccanica.jpg"
-            alt="Linea meccanica"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Linea meccanica ad aghi
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/time.svg" alt="Time" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">
-                  Effetto a lunga durata
-                </p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/database.svg" alt="Database" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Economico</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
             </div>
           </div>
-        </li>
-  
-        <!-- Nebulizzatore zanzare -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/nebulizzatore-zanzare.jpg"
-            alt="Nebulizzatore zanzare"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Nebulizzatore zanzare
+        </div>
+      </li>
+
+      <!-- Bonifica ambienti -->
+      <li class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white">
+        <img class="w-full" src="../../assets/img/bonifica-ambienti.jpg" alt="Bonifica ambienti" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Bonifica ambienti
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/sparkles.svg" alt="Sparkles" />
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/plus.svg" alt="Plus" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">
-                  Disinfestazione garantita
-                </p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/circle.svg" alt="Circle" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Definitiva</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Pulizia a fondo</p>
             </div>
           </div>
-        </li>
-  
-        <!-- Falco elettronico -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/falco-elettronico.jpg"
-            alt="Falco elettronico"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Falco elettronico
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/soap.svg" alt="Soap" />
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/award-fill.svg" alt="Award fill" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Rivoluzionario</p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/update.svg" alt="Update" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Sostenibile</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Massima igiene</p>
             </div>
           </div>
-        </li>
-  
-        <!-- Reti anti-intrusione -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/reti-anti-intrusione.jpg"
-            alt="Reti anti-intrusione"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Reti anti-intrusione
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/bookmark.svg" alt="Bookmark" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Tradizionale</p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/check-yes.svg" alt="Check yes" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Intervento sicuro</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
             </div>
           </div>
-        </li>
-  
-        <!-- Linea elettrificata -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/linea-elettrificata.jpg"
-            alt="Linea elettrificata"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Linea elettrificata
+        </div>
+      </li>
+
+      <!-- Linea meccanica ad aghi -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/linea-meccanica.jpg"
+          alt="Linea meccanica"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Linea meccanica ad aghi
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/time.svg" alt="Time" />
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/thumb-up.svg" alt="Thumb up" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">
-                  Effetto a lunga durata
-                </p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/circle.svg" alt="Circle" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Risultati garantiti</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">
+                Effetto a lunga durata
+              </p>
             </div>
           </div>
-        </li>
-  
-        <!-- Filo ballerino -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/filo-ballerino.jpg"
-            alt="Filo ballerino"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Filo ballerino
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/database.svg" alt="Database" />
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/bolt.svg" alt="Bolt" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Servizio veloce</p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/circle.svg" alt="Circle" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Intervento sicuro</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Economico</p>
             </div>
           </div>
-        </li>
-  
-        <!-- Falconiere autorizzato -->
-        <li
-          class="max-w-sm rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
-        >
-          <img
-            class="w-full"
-            src="../../assets/img/falconiere-autorizzato.jpg"
-            alt="Falconiere autorizzato"
-          />
-          <div class="px-6 py-4 mt-9">
-            <div class="font-bold text-black text-[24px] mb-2">
-              Falconiere autorizzato
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
             </div>
-            <p class="text-grey-3 font-paragraph text-p2">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/bolt.svg" alt="Bolt" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Servizio veloce</p>
-              </div>
-            </div>
-  
-            <div class="flex flex-row gap-2 mt-4">
-              <div>
-                <img src="../../assets/img/circle.svg" alt="Circle" />
-              </div>
-              <div>
-                <p class="text-grey-3 text-p2 font-title">Intervento sicuro</p>
-              </div>
-            </div>
-  
-            <div class="mt-9 flex items-center">
-              <div>
-                <p class="text-green-mid-4 text-p2 font-title">
-                  Scopri il servizio
-                </p>
-              </div>
-  
-              <div class="ml-2">
-                <img
-                  src="../../assets/img/arrow-right-green.svg"
-                  alt="Arrow right green"
-                />
-              </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
             </div>
           </div>
-        </li>
-      </ul>
-  
-      <div class="actions">
-        <button class="prev">Prev</button>
-        <button class="next">Next</button>
-      </div>
+        </div>
+      </li>
+      
+      <!-- Nebulizzatore zanzare -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/nebulizzatore-zanzare.jpg"
+          alt="Nebulizzatore zanzare"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Nebulizzatore zanzare
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/plus.svg" alt="Plus" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">
+                Disinfestazione garantita
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/circle.svg" alt="Circle" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Definitiva</p>
+            </div>
+          </div>
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
+            </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <!-- Falco elettronico -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/falco-elettronico.jpg"
+          alt="Falco elettronico"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Falco elettronico
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/award-fill.svg" alt="Award fill" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Rivoluzionario</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/update.svg" alt="Update" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Sostenibile</p>
+            </div>
+          </div>
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
+            </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <!-- Reti anti-intrusione -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/reti-anti-intrusione.jpg"
+          alt="Reti anti-intrusione"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Reti anti-intrusione
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/bookmark.svg" alt="Bookmark" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Tradizionale</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/check-yes.svg" alt="Check yes" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Intervento sicuro</p>
+            </div>
+          </div>
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
+            </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Linea elettrificata -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/linea-elettrificata.jpg"
+          alt="Linea elettrificata"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Linea elettrificata
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/thumb-up.svg" alt="Thumb up" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">
+                Effetto a lunga durata
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/circle.svg" alt="Circle" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Risultati garantiti</p>
+            </div>
+          </div>
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
+            </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Filo ballerino -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/filo-ballerino.jpg"
+          alt="Filo ballerino"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Filo ballerino
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/bolt.svg" alt="Bolt" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Servizio veloce</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/circle.svg" alt="Circle" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Intervento sicuro</p>
+            </div>
+          </div>
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
+            </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <!-- Falconiere autorizzato -->
+      <li
+        class="rounded-[12px] overflow-hidden shadow-lg m-5 bg-white"
+      >
+        <img
+          class="w-full"
+          src="../../assets/img/falconiere-autorizzato.jpg"
+          alt="Falconiere autorizzato"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-black text-[24px] mb-2">
+            Falconiere autorizzato
+          </div>
+          <p class="text-grey-3 font-paragraph text-p2">
+            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <img class="mt-4" src="../../assets/img/line.svg" alt="Line" />
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/bolt.svg" alt="Bolt" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Servizio veloce</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 mt-4">
+            <div>
+              <img src="../../assets/img/circle.svg" alt="Circle" />
+            </div>
+            <div>
+              <p class="text-grey-3 text-p2 font-title">Intervento sicuro</p>
+            </div>
+          </div>
+
+          <div class="mt-9 flex items-center">
+            <div>
+              <p class="text-green-mid-4 text-p2 font-title">
+                Scopri il servizio
+              </p>
+            </div>
+
+            <div class="ml-2">
+              <img
+                src="../../assets/img/arrow-right-green.svg"
+                alt="Arrow right green"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="actions absolute bottom-[25px] left-1/2 gap-[14px]">
+      <button class="prev">
+        <img src="../../assets/img/button-left.svg" alt="Button left">
+      </button>
+      <button class="next">
+        <img src="../../assets/img/button-right.svg" alt="Button right">
+      </button>
     </div>
+  </div>
+
+  <div class="drag-proxy absolute invisible"></div>
+</template>
   
-    <div class="drag-proxy"></div>
-  </template>
-  
-  <script setup>
+<script setup>
   import { gsap } from 'gsap';
   import { onMounted, ref } from 'vue';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import { Draggable } from 'gsap/all';
+  import { Draggable } from 'gsap/Draggable';
   
   onMounted(() => {
     gsap.registerPlugin(ScrollTrigger, Draggable);
@@ -535,10 +528,9 @@
       playhead = { offset: 0 },
       wrapTime = gsap.utils.wrap(0, seamlessLoop.duration()),
       scrub = gsap.to(playhead, {
-        // we reuse this tween to smoothly scrub the playhead on the seamlessLoop
         offset: 0,
         onUpdate() {
-          seamlessLoop.time(wrapTime(playhead.offset)); // convert the offset to a "safe" corresponding time on the seamlessLoop timeline
+          seamlessLoop.time(wrapTime(playhead.offset));
         },
         duration: 0.5,
         ease: 'power3',
@@ -652,45 +644,24 @@
       },
     });
   });
-  </script>
+</script>
   
-  <style>
-  .gallery {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
+<style>
+
   .cards {
-    width: 14rem;
-    height: 18rem;
-    top: 40%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .cards li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 14rem;
-    height: 18rem;
-    text-align: center;
-    line-height: 18rem;
-    font-size: 2rem;
-    top: 0;
-    left: 0;
-    border-radius: 0.8rem;
+    width: 400px;
+    height: 555px;
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.05);
   }
-  
+
   .actions {
-    bottom: 25px;
-    left: 50%;
     transform: translateX(-50%);
   }
-  
-  .drag-proxy {
-    visibility: hidden;
-  }
-  </style>
+</style>
   
