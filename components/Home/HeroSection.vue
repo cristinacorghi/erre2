@@ -29,7 +29,7 @@
         </div>
 
         <div class="mt-10 flex justify-center">
-            <button href="#" class="flex justify-center items-center w-60 h-[60px] py-4 px-8 gap-2 rounded-2xl bg-green-mid-4 shadow-button">
+            <button href="#" class="flex justify-center items-center w-60 h-[60px] py-4 px-8 gap-2 rounded-2xl bg-green-mid-4 shadow-button hover:bg-green-mid-2 hover:shadow-none">
                 <div>
                     <img src="../../assets/img/phone.svg" alt="Phone">
                 </div>
