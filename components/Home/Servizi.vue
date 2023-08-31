@@ -8,7 +8,7 @@
         <p class="text-grey-3 text-p2 text-center mt-5 mx-2 md:max-w-3xl text-margin">La nostra azienda è specializzata nell'allontanamento di tutti i volatili molesti che affollano i centri urbani, con particolare riferimento al piccione, specie “Columba Livia variante domestica”. I punti di maggior affluenza sono solitamente ospedali, scuole, monumenti, ecc...</p>
 
         <div class="mt-10 flex justify-center">
-            <button href="#" class="flex justify-center items-center w-60 h-[60px] py-4 px-8 gap-2 rounded-2xl bg-green-mid-4 shadow-button">
+            <button href="#" class="flex justify-center items-center w-60 h-[60px] py-4 px-8 gap-2 rounded-2xl bg-green-mid-4 hover:bg-green-mid-2 shadow-button">
                 <div>
                     <img src="../../assets/img/top-seller.svg" alt="Phone">
                 </div>

@@ -9,7 +9,7 @@
 
     <HomeServizi />
 
-    <!-- <HomeCarousel /> -->
+    <HomeCarousel />
 
     <HomeTuttiServizi />
 

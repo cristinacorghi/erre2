@@ -8,16 +8,18 @@
                 <img src="../../assets/img/bird.svg" alt="Bird">
                 <p class="text-grey-900 text-[24px] font-title mt-5">Raccolta autorizzata</p>
                 <p class="text-grey-3 text-p2 font-medium">Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
-                <div class="flex items-center mt-5">
-                    <div>
-                        <p class="text-green-dark-1 text-p2 font-title">Scopri il servizio</p>
+                <a href="#">
+                    <div class="flex items-center mt-5">
+                        <div>
+                            <p class="text-green-dark-1 hover:text-green-mid-2 text-p2 font-title">Scopri il servizio</p>
+                        </div>
+                        <div class="ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                <path d="M1.49955 1.05025L6.4493 6L1.49955 10.9497" stroke="#23590D" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="ml-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                            <path d="M1.49955 1.05025L6.4493 6L1.49955 10.9497" stroke="#23590D" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <!-- Bonifica ambienti -->

@@ -151,7 +151,7 @@
 
         <div class="flex flex-row items-center justify-center mt-5 md:mt-9">
             <div>
-                <a href="#" class="text-p2 font-medium text-grey-3 leading-[25.1px] tracking-[0.6px]">Vedi tutte le referenze</a>
+                <a href="#" class="text-p2 font-medium text-grey-3 hover:text-green-mid-2 leading-[25.1px] tracking-[0.6px]">Vedi tutte le referenze</a>
             </div>
             <div class="ml-1">
                 <img src="../../assets/img/arrow-right.svg" alt="Arrow right">
