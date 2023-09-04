@@ -1,6 +1,5 @@
 <template>
 
-    <!-- <HomeHeroAnimation /> -->
     <div class="flex justify-center items-center gap-2 flex-col lg:h-screen">
         <HomeHeroSection />
     </div>

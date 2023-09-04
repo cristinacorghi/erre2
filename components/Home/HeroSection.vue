@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="mt-10 flex flex-col justify-center items-center">
+        <div ref="hero_services" class="mt-10 flex flex-col justify-center items-center">
             <div class="flex flex-row">
                 <div>
                     <img class="w-[20px] md:w-[26px]" src="../../assets/img/check.svg" alt="Check">
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="mt-10 flex justify-center">
+        <div ref="button_chiama_ora" class="mt-10 flex justify-center">
             <button href="#" class="flex justify-center items-center w-60 h-[60px] py-4 px-8 gap-2 rounded-2xl bg-green-mid-4 shadow-button hover:bg-green-mid-2 hover:shadow-none">
                 <div>
                     <img src="../../assets/img/phone.svg" alt="Phone">
@@ -159,6 +159,20 @@
         </div>
     </div>
 </template>
+
+<script setup>
+import { gsap } from 'gsap';
+
+const hero_services = ref();
+const button_chiama_ora = ref();
+
+onMounted(() => {
+    var tl = gsap.timeline({repeatDelay: 1});
+    tl.fromTo(hero_services.value, {y: -100, opacity: 0}, {y: 0, opacity: 1, duration: 1});
+    tl.fromTo(button_chiama_ora.value, {y: -50, opacity: 0}, {y: 0, opacity: 1, duration: 1});
+})
+
+</script>
 
 <style>
 .sfondo {
